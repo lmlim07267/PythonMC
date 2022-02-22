@@ -39,7 +39,12 @@ mc = Minecraft.create()
 # mc.setBlocks(x, y, z, x+10, y+20, z+10, 213)
 
 #part5
-while True:
-    x, y, z = mc.player.getTilePos()
-    mc.setBlocks(x-1, y, z+1, x+1, y, z-1, 213)
-    mc.setBlock(x, y, z, 11)
+# while True:
+#     x, y, z = mc.player.getTilePos()
+#     mc.setBlocks(x-1, y, z+1, x+1, y, z-1, 213)
+#     mc.setBlock(x, y, z, 11)
+
+#part6 
+x, y, z = mc.player.getTilePos()
+mc.setBlocks(x, y, z, x+10, y+15, z+12, 133)
+mc.setBlocks(x+1, y+1, z+1, x+9, y+14, z+11, 0)
