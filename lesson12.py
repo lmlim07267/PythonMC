@@ -16,7 +16,12 @@ mc = Minecraft.create()
 # print(myId)    
 # mc.postToTitle(myId, "go die bro")
 
-#part1
+#part2
+# myId = mc.getPlayerEntityId('lmlim')
+# print(myId)    
+# mc.entity.setTilePos(myId, 100, 100, 100)
+
+#part3
 myId = mc.getPlayerEntityId('lmlim')
-print(myId)    
-mc.entity.setTilePos(myId, 100, 100, 100)
+x, y, z = mc.entity.getTilePos(myId)
+mc.createExplosion(x, y, z, 99999)
